@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #87CEEB;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 1rem;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    background-color: green;
+    padding: 1rem;
+}
+
+nav a {
+    display: block;
+
+    background-color: #D32F2F;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+
+    font-size: 1rem;
+
+    padding: 0.6rem 1rem;
+
+    border: 2px solid #8B0000;
+    border-radius: 50px;
+}
+
+nav a:hover {
+    background-color: #FF5252;
+}
+main {
+    display: block;
+
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 2rem auto;
+    padding: 1rem;
+}
+.card {
+    background-color: #8B5A2B;
+    color: white;
+
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+
+    border: 2px solid #5D3A1A;
+    border-radius: 10px;
+}
+
+.card h2 {
+    color: #E8F5E9;
+    font-size: 1.8rem;
+
+    margin-top: 0;
+}
+
+.card p {
+    text-align: justify;
+}
+
+.card ul,
+.card ol {
+    padding-left: 1.5rem;
+}
+
+.card li {
+    margin-bottom: 0.5rem;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    background-color: green;
+    color: white;
+
+    text-align: center;
+
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+footer img {
+    display: block;
+
+    width: 150px;
+    max-width: 100%;
+
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+footer p {
+    margin: 0.5rem;
+}
+
+
+/* =========================
+   TELAS MAIORES
+========================= */
+
+@media (min-width: 768px) {
+
+    /* MENU EM LINHA */
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        display: inline-block;
+        width: auto;
+    }
+
+
+    /* CARDS EM GRID */
+    main {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 1.5rem;
+    }
+
+    .card {
+        margin-bottom: 0;
+    }
+
+
+    /* HEADER MAIOR */
+    header {
+        padding: 3rem 2rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+
+    /* FOOTER */
+    footer {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+}
