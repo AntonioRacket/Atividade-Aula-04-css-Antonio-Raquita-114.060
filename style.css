@@ -103,6 +103,10 @@ main {
 .card li {
     margin-bottom: 0.5rem;
 }
+.card a {
+    color:white;
+    text-decoration: none;
+}
 footer {
     display: flex;
     flex-direction: column;
@@ -132,15 +136,16 @@ footer img {
 footer p {
     margin: 0.5rem;
 }
+footer a {
+    color: white;
+    text-decoration: none;
+}
 
 
-/* =========================
-   TELAS MAIORES
-========================= */
 
 @media (min-width: 768px) {
 
-    /* MENU EM LINHA */
+    
     nav {
         flex-direction: row;
         justify-content: center;
@@ -155,7 +160,7 @@ footer p {
     }
 
 
-    /* CARDS EM GRID */
+    
     main {
         display: grid;
 
@@ -169,7 +174,7 @@ footer p {
     }
 
 
-    /* HEADER MAIOR */
+   
     header {
         padding: 3rem 2rem;
     }
@@ -179,7 +184,7 @@ footer p {
     }
 
 
-    /* FOOTER */
+   
     footer {
         flex-direction: row;
         justify-content: center;
